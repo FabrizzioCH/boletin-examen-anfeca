@@ -1,0 +1,25 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boletin Informativo</title>
+  </head>
+  <body class="bg-indigo-950 text-white">
+    <h1
+      class="text-5xl text-center font-bold m-3 bg-indigo-500 rounded-4xl py-2 uppercase"
+    >
+      Se repite el examen de ANFECA
+    </h1>
+    <slot />
+  </body>
+  <footer class="py-7 text-center border-t-2 border-indigo-500">
+    Consejería Técnica LI - Fabrizzio Cázares - 2025
+  </footer>
+</html>
