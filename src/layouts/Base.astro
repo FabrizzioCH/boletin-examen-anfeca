@@ -1,6 +1,4 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
 
@@ -11,15 +9,25 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boletin Informativo</title>
   </head>
-  <body class="bg-indigo-950 text-white">
-    <h1
-      class="text-5xl text-center font-bold m-3 bg-indigo-500 rounded-4xl py-2 uppercase"
+  <body
+    class="bg-gradient-to-b from-indigo-100 via-indigo-200 to-indigo-400 text-white mx-auto max-w-4xl"
+  >
+    <main class="bg-indigo-950 shadow-lg mt-8">
+      <div class="pt-8">
+        <h1
+          class="text-5xl text-center font-bold py-4 capitalize
+    border-y mb-8 mx-4"
+        >
+          Se repite examen ANFECA
+        </h1>
+      </div>
+
+      <slot />
+    </main>
+    <footer
+      class="py-7 text-2xl text-center border-t-2 border-indigo-500 font-bold"
     >
-      Se repite el examen de ANFECA
-    </h1>
-    <slot />
+      Consejería Técnica LI - Fabrizzio Cázares 😉- 2025
+    </footer>
   </body>
-  <footer class="py-7 text-center border-t-2 border-indigo-500">
-    Consejería Técnica LI - Fabrizzio Cázares - 2025
-  </footer>
 </html>

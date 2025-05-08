@@ -4,9 +4,52 @@ import "../styles/global.css";
 ---
 
 <Base>
-  <p class="p-4">
-    El pasado martes 6 de mayo del 2024 se llevo a cabo el examen filtro local
-    de la FCAeI para el maratón de conocimientos ANFECA 2025 en el área de
-    Informática Administrativa
-  </p>
+  <section class="grid grid-cols-2 gap-6 mb-12 p-6">
+    <!-- Contenedor para el texto -->
+    <div>
+      <h2 class="text-3xl mb-6">
+        Durante la realización del examen ocurrió un <span
+          class="font-extrabold">error técnico</span
+        >
+      </h2>
+      <p class="text-justify">
+        El pasado <span class="font-bold">martes 6 de mayo de 2025</span> se llevó
+        a cabo el primer filtro para seleccionar a los estudiantes que participarían
+        en el <span class="font-bold">Maratón de conocimientos 2025</span> organizado
+        por ANFECA. Sin embargo, se detectó un error técnico en la configuración
+        del examen que permitia comprobar las respuestas de cada pregunta hasta seleccionar
+        el inciso correcto.
+      </p>
+    </div>
+
+    <img
+      src="/pasillo-alumnos-recortada.jpg"
+      alt="Alumnos en los pasillos de los centros de cómputo"
+      class="w-auto object-cover"
+    />
+  </section>
+
+  <section class="grid grid-cols-2 gap-6 p-6">
+    <img
+      src="/alumnos-haciendo-examen-recortada.jpg"
+      alt="Alumnos en los pasillos de los centros de cómputo"
+      class="w-auto object-cover"
+    />
+
+    <!-- Contenedor para el texto -->
+    <div>
+      <h2 class="text-3xl mb-6">
+        Muchas <span class="font-extrabold">trampas</span> en el examen
+      </h2>
+      <p class="text-justify">
+        Los estudiantes no eran conscientes de este error técnico, lo que
+        provocó que la mayoría comprobara las respuestas de cada pregunta.
+      </p>
+    </div>
+  </section>
+
+  <section class="relative border-t border-white">
+    <div class="absolute -top-1 w-1/3 h-1 bg-white"></div>
+    <h2 class="text-3xl">Ya hay fecha para repetir el examen</h2>
+  </section>
 </Base>
